@@ -1,0 +1,35 @@
+    <h2>Login</h2>
+<form name="form" ng-submit="vm.login()" role="form" class="register-form">
+    <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+        <fieldset class="container">
+            <legend class="reg"><em>LOGIN FORM</em></legend>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="form-control" ng-model="vm.username" required />
+                <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>            
+            </div>            
+       <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+             <div class="col-md-4 col-sm-4 col-lg-4">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
+            <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">
+                 <font color="red">The password is required with minLength = 3 and maxLength = 15></font>
+             </span>            
+            </div>            
+        </div>
+        <div class="form-actions">
+            <button type="submit" ng-disabled="form.$invalid" class="logbutton">Login</button>
+            <a href="#!/reg" class="btn btn-link">Register</a>
+        </div>
+    </fieldset>
+    </div>
+</form>
+
+
+
+
+
+    
+
+
+
