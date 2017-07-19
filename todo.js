@@ -1,8 +1,5 @@
 (function () {
-    'use strict';
-
-    angular
-        .module('app')
+    var app = angular.module('Todo-app', []);
 
 	app.controller('Todoctrl', function($scope) {
 		$scope.todos = [];

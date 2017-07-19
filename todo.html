@@ -1,4 +1,11 @@
+<!doctype html>
+<html ng-app='Todo-app'>
+    <head>
+<link rel="stylesheet" href="https://maxcdn.boostrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
+    </head>
 <div class="container">
+    <body ng-controller='Todoctrl'>
 		<h4 class="list-group-item title">you have {{getTotal}} Angular Todos</h4>
 
 		<div ng-repeat = "todo in todos" class="list-group-item">
@@ -25,4 +32,6 @@
 
 			<input type="submit" />
 		</form>
-	</div>
+    </body>
+    </div>
+</html>
